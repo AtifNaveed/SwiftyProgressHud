@@ -1,0 +1,22 @@
+{
+  "name": "SwiftyProgressHud",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftyProgressHud.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AtifNaveed/SwiftyProgressHud",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AtifNaveed": "atif.gcucs@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/AtifNaveed/SwiftyProgressHud.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftyProgressHud/Classes/**/*"
+}

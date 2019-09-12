@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyProgressHud (0.1.0)
+
+DEPENDENCIES:
+  - SwiftyProgressHud (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyProgressHud:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftyProgressHud: 13d08837387f62fca8c6784d7f0d90a053d06a07
+
+PODFILE CHECKSUM: ad253821454c6ad3a1a2981660859da8c63896c1
+
+COCOAPODS: 1.7.5

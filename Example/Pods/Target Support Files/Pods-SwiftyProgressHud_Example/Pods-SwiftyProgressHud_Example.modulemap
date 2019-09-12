@@ -1,0 +1,6 @@
+framework module Pods_SwiftyProgressHud_Example {
+  umbrella header "Pods-SwiftyProgressHud_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
