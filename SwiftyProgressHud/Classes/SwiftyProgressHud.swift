@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class SwiftyProgressHud: UIView {
+public class SwiftyProgressHud: UIView {
     private var parentView: UIView!
     private var bgView: UIVisualEffectView!
     private var hudView: UIView!
@@ -15,7 +15,7 @@ class SwiftyProgressHud: UIView {
     private var lblText: UILabel!
     private var _text: String = "Loading"
     
-    var text: String {
+    public var text: String {
         set { _text = newValue }
         get { return _text  }
     }
@@ -77,14 +77,14 @@ class SwiftyProgressHud: UIView {
         self.addSubview(hudView)
     }
     
-    func show(view: UIView) {
+    public func show(view: UIView) {
         parentView = view
         lblText.text = text
         parentView.addSubview(self)
         hudActivity.startAnimating()
     }
     
-    func hide() {
+    public func hide() {
         hudActivity.stopAnimating()
         self.removeFromSuperview()
     }
@@ -93,7 +93,7 @@ class SwiftyProgressHud: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         detectOrientation()
     }

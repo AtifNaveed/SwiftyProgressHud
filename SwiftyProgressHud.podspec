@@ -29,7 +29,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'SwiftyProgressHud/Classes/**/*'
+  s.source_files = 'SwiftyProgressHud/Classes/*.swift'
+  
+  s.frameworks = 'UIKit' ~ 'Enable only required Framework'
   
   # s.resource_bundles = {
   #   'SwiftyProgressHud' => ['SwiftyProgressHud/Assets/*.png']

@@ -2,23 +2,29 @@
 //  ViewController.swift
 //  SwiftyProgressHud
 //
-//  Created by AtifNaveed on 09/12/2019.
-//  Copyright (c) 2019 AtifNaveed. All rights reserved.
+//  Created by Atif on 12/09/2019.
+//  Copyright © 2019 Atif. All rights reserved.
 //
 
 import UIKit
+import SwiftyProgressHud
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var subViewContainer: UIView!
+    var hud: SwiftyProgressHud!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        hud = SwiftyProgressHud()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func showHud(_ sender: Any) {
+        hud.text = "Loading.."
+        hud.show(view: self.view)
+        self.perform(#selector(removeHud), with: nil, afterDelay: 3.0)
     }
-
+    
+    @objc func removeHud() {
+        hud.hide()
+    }
 }
-
