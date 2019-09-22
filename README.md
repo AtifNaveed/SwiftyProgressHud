@@ -1,4 +1,4 @@
-# SwiftyProgressHud
+# Swifty Progress Hud
 
 [![CI Status](https://img.shields.io/travis/AtifNaveed/SwiftyProgressHud.svg?style=flat)](https://travis-ci.org/AtifNaveed/SwiftyProgressHud)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyProgressHud.svg?style=flat)](https://cocoapods.org/pods/SwiftyProgressHud)
