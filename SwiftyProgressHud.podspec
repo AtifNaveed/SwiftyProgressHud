@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftyProgressHud'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.swift_version    = '4.2'
   s.summary          = 'SwiftyLHud is activity loader'
 
@@ -30,9 +30,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SwiftyProgressHud/Classes/*.swift'
-  
-  s.frameworks = 'UIKit' ~ 'Enable only required Framework'
-  
+    
   # s.resource_bundles = {
   #   'SwiftyProgressHud' => ['SwiftyProgressHud/Assets/*.png']
   # }
