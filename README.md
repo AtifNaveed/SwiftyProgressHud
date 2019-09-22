@@ -27,3 +27,29 @@ AtifNaveed, atif.gcucs@gmail.com
 ## License
 
 SwiftyProgressHud is available under the MIT license. See the LICENSE file for more info.
+
+
+## Usage
+
+import UIKit
+import SwiftyProgressHud
+
+class ViewController: UIViewController {
+    @IBOutlet weak var subViewContainer: UIView!
+    var hud: SwiftyProgressHud!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hud = SwiftyProgressHud()
+    }
+    
+    @IBAction func showHud(_ sender: Any) {
+        hud.text = "Loading"
+        hud.show(view: self.view)
+        self.perform(#selector(removeHud), with: nil, afterDelay: 3.0)
+    }
+    
+    @objc func removeHud() {
+        hud.hide()
+    }
+}
