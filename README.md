@@ -21,7 +21,7 @@ pod 'SwiftyProgressHud'
 ```
 
 ## Usage
-    var hud: SwiftyProgressHud
+    var hud = SwiftyProgressHud()
     hud.show(view: self.view)
 
 ## Example
