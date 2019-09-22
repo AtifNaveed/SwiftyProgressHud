@@ -30,11 +30,9 @@ SwiftyProgressHud is available under the MIT license. See the LICENSE file for m
 
 
 ## Usage
-- var hud: SwiftyProgressHud
-- hud.show(view: self.view)
-- hud.hide
-
-
+    var hud: SwiftyProgressHud
+    hud.show(view: self.view)
+    hud.hide
 
 ## Example
 
