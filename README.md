@@ -23,7 +23,6 @@ pod 'SwiftyProgressHud'
 ## Usage
     var hud: SwiftyProgressHud
     hud.show(view: self.view)
-    hud.hide
 
 ## Example
 
