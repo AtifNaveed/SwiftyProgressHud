@@ -20,15 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'SwiftyProgressHud'
 ```
 
-## Author
-
-AtifNaveed, atif.gcucs@gmail.com
-
-## License
-
-SwiftyProgressHud is available under the MIT license. See the LICENSE file for more info.
-
-
 ## Usage
     var hud: SwiftyProgressHud
     hud.show(view: self.view)
@@ -58,3 +49,11 @@ SwiftyProgressHud is available under the MIT license. See the LICENSE file for m
             hud.hide()
         }
     }
+
+## Author
+
+AtifNaveed, atif.gcucs@gmail.com
+
+## License
+
+SwiftyProgressHud is available under the MIT license. See the LICENSE file for more info.
