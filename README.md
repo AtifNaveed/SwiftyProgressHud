@@ -30,11 +30,11 @@ SwiftyProgressHud is available under the MIT license. See the LICENSE file for m
 
 
 ## Usage
-Init Hud
+- Init Hud
     var hud: SwiftyProgressHud
-Show Hud
+- Show Hud
     hud.show(view: self.view)
-Hide Hud
+- Hide Hud
     hud.hide
 
 
