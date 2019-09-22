@@ -31,7 +31,6 @@ pod 'SwiftyProgressHud'
     import SwiftyProgressHud
 
     class ViewController: UIViewController {
-        @IBOutlet weak var subViewContainer: UIView!
         var hud: SwiftyProgressHud!
     
         override func viewDidLoad() {
@@ -39,13 +38,12 @@ pod 'SwiftyProgressHud'
             hud = SwiftyProgressHud()
         }
     
-        @IBAction func showHud(_ sender: Any) {
+        func showHud() {
             hud.text = "Loading"
             hud.show(view: self.view)
-            self.perform(#selector(removeHud), with: nil, afterDelay: 3.0)
         }
     
-        @objc func removeHud() {
+        func hideHud() {
             hud.hide()
         }
     }
